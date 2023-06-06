@@ -1,0 +1,18 @@
+:root{
+    --primaryColor: #ff5f6d;
+    --primaryHover: #ff3344;
+    --secondaryColor: #ffc371;
+    --secHoverColor: #ffa14d;
+    --greyColor: #707070;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    background: var(--primaryColor);
+    z-index: 2000;
+}
