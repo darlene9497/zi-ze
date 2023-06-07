@@ -8,11 +8,11 @@
 }
 
 :root{
-  --primaryColor: #ff5f6d;
-  --primaryHover: #ff3344;
+  --primaryColor: #ffa75f;
+  --primaryHover: #ffa033;
   /* --secondaryColor: #ffc371; */
   --secHoverColor: #ffa14d;
-  --greyColor: #707070;
+  --greyColor: #e0dbdb;
 }
 
 /* Default css */
