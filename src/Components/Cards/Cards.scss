@@ -1,7 +1,75 @@
 :root{
-    --primaryColor: #ff5f6d;
-    --primaryHover: #ff3344;
-    --secondaryColor: #ffc371;
-    --secHoverColor: #ffa14d;
-    --greyColor: #707070;
+    --primaryColor: #f8a547;
+    --primaryHover: #ff7e33;
+    --secondaryColor: #faa732;
+    --secHoverColor: #ff5c33;
+    --greyColor: #f7f0f0;
+}
+
+.cards{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: var(--greyColor);
+    z-index: 5000;
+
+    .cardContainer{
+        .singleCard{
+            transform: translateY(-50%);
+            height: 250px;
+            width: 100%;
+            position: relative;
+            transition: .5s;
+
+            &::after{
+                content: '';
+                position: absolute;
+                z-index: 2;
+                height: 100%;
+                width: 100%;
+                bottom: 0;
+                background: linear-gradient(rgba(0,0,1,0.42), rgba(0,0,1,0.549));
+                border-radius: 10px;
+            }
+
+            .imgDiv{
+                height: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .textDiv{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%);
+                color: white;
+                z-index: 5;
+            }
+        }
+
+        .spanText{
+            text-align: center;
+            transform: translateY(-50%);
+            padding-top: 1.5rem;
+            margin: auto;
+            gap: .5rem;
+            &:hover{
+                font-weight: 600;
+
+                .icon{
+                    transition: .4s;
+                    transform: translate(10px);
+                }
+            }
+        }
+    }
 }

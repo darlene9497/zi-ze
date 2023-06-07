@@ -1,8 +1,8 @@
 import './App.css';
-// import Cards from './Components/Cards/Cards';
+import Cards from './Components/Cards/Cards';
 // import Discount from './Components/Discount/Discount';
 // import Footer from './Components/Footer/Footer';
-// import Home from './Components/Home/Home';
+import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 // import Review from './Components/Review/Review';
 // import Staff from './Components/Staff/Staff';
@@ -12,9 +12,9 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* <Home />
+      <Home />
       <Cards />
-      <Tours />
+      {/* <Tours />
       <Discount />
       <Review />
       <Staff />

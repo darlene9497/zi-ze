@@ -1,7 +1,49 @@
 :root{
-    --primaryColor: #ff5f6d;
-    --primaryHover: #ff3344;
-    --secondaryColor: #ffc371;
-    --secHoverColor: #ffa14d;
-    --greyColor: #707070;
+    --primaryColor: #f8a547;
+    --primaryHover: #ff7e33;
+    // --secondaryColor: #faa732;
+    --secHoverColor: #ff5c33;
+    --greyColor: #f7f0f0;
+}
+
+.home{
+    height: 90vh;
+    width: 100%;
+    padding: 5rem 1.5rem;
+    background: linear-gradient(rgba(0,0,1,0.42), rgba(0,0,1,0.549)), url('../assets/Kenya.jpeg');
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    row-gap: 1rem;
+
+    .spanText{
+        color: white;
+        font-weight: 500;
+    }
+
+    .homeTitle{
+        color: white;
+        padding: 2rem 0;
+        font-size: 40px;
+
+        strong{
+            font-weight: 800;
+        }
+    }
+
+    .btn{
+        border: 1px solid white;
+        // color: white;
+        font-size: 13px;
+        transition: -2s;
+        width: max-content;
+        &:hover{
+            background: rgb(224, 210, 210);
+            color: var(--secHoverColor);
+            border: 1px solid white;
+        }
+    }
 }
