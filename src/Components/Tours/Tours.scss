@@ -1,7 +1,105 @@
 :root{
-    --primaryColor: #ff5f6d;
-    --primaryHover: #ff3344;
-    --secondaryColor: #ffc371;
-    --secHoverColor: #ffa14d;
-    --greyColor: #707070;
+    --primaryColor: #f8a547;
+    --primaryHover: #ff7e33;
+    // --secondaryColor: #faa732;
+    --secHoverColor: #ff5c33;
+    --greyColor: #f7f0f0;
+}
+
+.tours{
+    .secContainer{
+        .tourContainer{
+            display: grid;
+            gap: 1rem;
+
+            .singleTour{
+                width: 100%;
+                position: relative;
+                border: 1px solid var(--greyColor);
+                padding-bottom: 1rem;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .4s ease;
+
+                &:hover{
+                    background: var(--greyColor);
+                }
+
+                .imgDiv{
+                    height: 200px;
+                    width: 100%;
+                    overflow: hidden;
+
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                        transition: .3s ease-in-out;
+                    }
+
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .tourInfo{
+                    padding: 0 1rem;
+
+                    .tourTitle{
+                        font-size: 15px;
+                        color: var(--primaryColor);
+                        font-weight: 600;
+                    }
+
+                    .stars_review{
+                        align-items: center;
+                        gap: .5rem;
+                        padding: 1rem 0;
+
+                        .stars{
+                            color: #ff5c33 !important;
+
+                            .icon{
+                                font-size: 14px !important;
+                            }
+                        }
+
+                        .custReview{
+                            font-size: 13px;
+                            transform: translate(-2px);
+                        }
+                    }
+
+                    p{
+                        padding-bottom: 1rem;
+                    }
+
+                    .btn{
+                        color: var(--primaryColor);
+                        font-size: 14px;
+                        border: 2px solid var(--primaryColor);
+                        transition: .3s ease;
+
+                        &:hover{
+                            background: var(--primaryColor);
+                            color: white;
+                            border: 2px solid var(--primaryColor);
+                        }
+                    }
+                }
+
+                .price{
+                    position: absolute;
+                    padding: 10px;
+                    background: var(--primaryColor);
+                    top: 0;
+                    right: 0;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
 }
