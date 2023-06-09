@@ -1,7 +1,66 @@
 :root{
-    --primaryColor: #ff5f6d;
-    --primaryHover: #ff3344;
-    --secondaryColor: #ffc371;
-    --secHoverColor: #ffa14d;
-    --greyColor: #707070;
+    --primaryColor: #f8a547;
+    --primaryHover: #ff7e33;
+    // --secondaryColor: #faa732;
+    --secHoverColor: #ff5c33;
+    --greyColor: #f7f0f0;
+}
+
+.staff{
+    .staffContainer{
+        margin-top: 4rem;
+        gap: 4rem;
+
+        .singleStaff{
+            position: relative;
+            background: white;
+            box-shadow: 0 3px 5px rgb(218,219,218);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            transition: .4s ease;
+
+            &:hover{
+                transform: translateY(-10px);
+            }
+
+            .imgDiv{
+                position: absolute;
+                height: 80px;
+                width: 80px;
+                right: 50%;
+                left: 50%;
+                top: -23%;
+                border-radius: 50%;
+                overflow: hidden;
+                transform: translateX(-50%);
+                border: 10px solid white;
+            }
+
+            p{
+                padding: 1rem;
+                line-height: 1.3rem;
+            }
+
+            .name{
+                color: var(--primaryColor);
+                font-weight: 600;
+                padding-top: 2rem;
+                font-size: 14px;
+            }
+
+            .jobTitle{
+                color: black;
+                font-size: 12px;
+                padding-left: .5rem;
+                font-weight: 500;
+            }
+
+            .contact{
+                color: var(--primaryColor);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
 }

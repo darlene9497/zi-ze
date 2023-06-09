@@ -32,7 +32,6 @@ export default function Tours() {
               <small className="custReview">
                 1,296 Tourists Review
               </small>
-            </div>
             <p>
               Situated in the heart of East Africa, 
               the Maasai Mara needs no introduction as 
@@ -51,6 +50,7 @@ export default function Tours() {
             <span className="price">
               $80
             </span>
+          </div>
           </div>
           <div className="singleTour grid">
             <div className="imgDiv">
@@ -72,7 +72,6 @@ export default function Tours() {
               <small className="custReview">
                 748 Tourists Review
               </small>
-            </div>
             <p>
               One of the most iconic sights in all of Africa 
               is the vast flock of bright pink flamingos that 
@@ -92,6 +91,7 @@ export default function Tours() {
             <span className="price">
               $80
             </span>
+            </div>
           </div>
         </div>
       </div>

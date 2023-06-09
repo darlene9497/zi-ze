@@ -1,7 +1,97 @@
 :root{
-    --primaryColor: #ff5f6d;
-    --primaryHover: #ff3344;
-    --secondaryColor: #ffc371;
-    --secHoverColor: #ffa14d;
-    --greyColor: #707070;
+    --primaryColor: #f8a547;
+    --primaryHover: #ff7e33;
+    // --secondaryColor: #faa732;
+    --secHoverColor: #ff5c33;
+    --greyColor: #f7f0f0;
+}
+.footer{
+    background: var(--primaryHover);
+
+    .secContainer{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        .content{
+            gap: 1rem;
+            padding: 2.5rem 0;
+
+            .row{
+                color: white;
+
+                .spanText{
+                    font-weight: 800;
+                    color: white;
+                    padding: 1rem 0;
+                }
+
+                .contactDiv{
+                    display: grid;
+                    gap: .5rem;
+                }
+
+                .flex{
+                    gap: .5rem;
+
+                    .icon{
+                        font-size: 15px;
+                        color: black;
+                    }
+
+                    span{
+                        font-size: 14px;
+                    }
+                }
+
+                .singleNews{
+                    margin-bottom: 1rem;
+
+                    .text{
+                        font-size: 14px;
+                    }
+
+                    p{
+                        padding-top: .4rem;
+                    }
+                }
+
+                .footerLinks ul{
+                    li{
+                        font-size: 14px;
+                        cursor: pointer;
+                        padding: .5rem 0;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottomDiv{
+            padding: 1rem;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            gap: 1rem;
+            background: var(--primaryColor);
+            color: var(--secHoverColor);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+
+            .social{
+                gap: .5rem;
+
+                .icon{
+                    font-size: 15px;
+                    cursor: pointer;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
 }
