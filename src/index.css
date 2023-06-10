@@ -8,11 +8,11 @@
 }
 
 :root{
-  --primaryColor: #ffa75f;
-  --primaryHover: #ffa033;
-  /* --secondaryColor: #ffc371; */
-  --secHoverColor: #ffa14d;
-  --greyColor: #e0dbdb;
+  --primaryColor: #f8a547;
+  --primaryHover: #ff7e33;
+  /* --secondaryColor: #faa732; */
+  --secHoverColor: #ff5c33;
+  --greyColor: #f7f0f0;
 }
 
 /* Default css */
@@ -93,4 +93,35 @@ img{
   color: var(--greyyColor);
   background: transparent;
   border-radius: 5px;
+}
+
+@media screen and (min-width:960px) {
+  .container{
+    width: 75%;
+    margin: auto;
+  }
+
+  .section{
+    padding: 6rem 0 4rem;
+  }
+
+  .secTitle{
+    font-size: 30px;
+    padding-bottom: 2rem;
+  }
+}
+
+::selection{
+  background: var(--secHoverColor);
+  color: white;
+}
+
+::-webkit-scrollbar{
+  width: 13px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--primaryColor);
+  border-radius: 10px;
 }

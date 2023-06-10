@@ -95,3 +95,100 @@
         }
     }
 }
+
+@media screen and (min-width:574px) {
+    .footer{
+        .secContainer{
+            .content{
+                grid-template-columns: repeat(3,1fr);
+                align-items: flex-start;
+                justify-content: center;
+
+                .row{
+                    margin: 0 auto;
+
+                    .spanText{
+                        font-size: 14px;
+                    }
+
+                    .contactDiv{
+                        display: grid;
+                        gap: 1rem;
+                    }
+
+                    .flex{
+                        gap: 1rem;
+
+                        .icon{
+                            font-size: 14px;
+                        }
+
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+
+                    .singleNews{
+                        .text{
+                            font-size: 14px;
+                        }
+
+                        p{
+                            padding-top: 1rem;
+                        }
+                    }
+
+                    .footerLinks ul{
+                        li{
+                            font-size: 14px;
+                            cursor: pointer;
+                            padding: .5rem 0;
+                        }
+                    }
+                }
+            }
+
+            .bottomDiv{
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .footer{
+        .secContainer{
+            .content{
+                .row{
+                    .spanText{
+                        font-size: 17px;
+                    }
+
+                    .flex{
+                        gap: 1rem;
+
+                        .icon{
+                            font-size: 18px;
+                        }
+
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+
+                    .singleNews{
+                        .text{
+                            font-size: 16px;
+                        }
+                    }
+
+                    .footerLinks ul{
+                        li{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

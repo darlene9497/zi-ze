@@ -1,16 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Footer.scss'
 import { HiPhone } from 'react-icons/hi'
 import { MdEmail } from 'react-icons/md'
 import { FaLocationArrow, FaFacebookF } from 'react-icons/fa'
 import { AiFillInstagram, AiOutlineTwitter, AiFillYoutube } from 'react-icons/ai'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Footer() {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
   return (
     <div className='footer'>
       <div className="secContainer container">
         <div className="content grid">
-          <div className="row">
+          <div data-aos='fade-up' data-aos-duration='2000' className="row">
             <div className="spanText">
               CONTACT US
             </div>
@@ -29,7 +36,7 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div className="row">
+          <div data-aos='fade-up' data-aos-duration='2000' className="row">
             <div className="spanText">
               POPULAR NEWS
             </div>
@@ -54,7 +61,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="row">
+          <div data-aos='fade-up' data-aos-duration='2000' className="row">
             <div className="spanText">
               QUICK LINKS
             </div>
@@ -70,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="bottomDiv flex">
-          <p>Copyright 2023 Darlene - All rights reserved</p>
+          <p data-aos='fade-up' data-aos-duration='2000'>Copyright 2023 Darlene - All rights reserved</p>
           <div className="social flex">
             <FaFacebookF className='icon' />
             <AiOutlineTwitter className='icon' />

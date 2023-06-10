@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Staff.scss'
 import woman2 from '../assets/woman2.jpeg'
 import man2 from '../assets/man2.jpeg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Staff() {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+  
   return (
     <div className='staff container section'>
       <div className="secContainer">
@@ -11,7 +18,7 @@ export default function Staff() {
           Different people - One mission
         </span>
         <div className="staffContainer grid">
-          <div className="singleStaff">
+          <div data-aos='fade-up' data-aos-duration='2000' className="singleStaff">
             <div className="imgDiv">
               <img src={man2} alt="" />
             </div>
@@ -25,7 +32,7 @@ export default function Staff() {
               +254 789 456 123
             </span>
           </div>
-          <div className="singleStaff">
+          <div data-aos='fade-up' data-aos-duration='2500' className="singleStaff">
             <div className="imgDiv">
               <img src={woman2} alt="" />
             </div>

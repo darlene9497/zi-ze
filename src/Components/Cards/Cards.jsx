@@ -1,17 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Cards.scss'
 import nnp from '../assets/nnp.jpeg'
 import diani from '../assets/diani.jpeg'
 import lake from '../assets/lake.jpeg'
 import { AiOutlineSwapRight } from 'react-icons/ai'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Cards() {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
   return (
     <div className='cards'>
-      <div className="cardContainer container grid">
+      <div data-aos='fade-up' data-aos-duration='2000' className="cardContainer container grid">
         <div className="singleCard">
           <div className="imgDiv">
-            <img src={nnp} />
+            <img src={nnp} alt=''/>
           </div>
           <h4 className="textDiv">
             National Parks
@@ -19,7 +26,7 @@ export default function Cards() {
         </div>
         <div className="singleCard">
           <div className="imgDiv">
-            <img src={diani} />
+            <img src={diani} alt=''/>
           </div>
           <h4 className="textDiv">
             Coast Beaches
@@ -27,7 +34,7 @@ export default function Cards() {
         </div>
         <div className="singleCard">
           <div className="imgDiv">
-            <img src={lake} />
+            <img src={lake} alt=''/>
           </div>
           <h4 className="textDiv">
             Serene Lakes

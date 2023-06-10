@@ -47,3 +47,57 @@
         }
     }
 }
+
+@media screen and (min-width:690px) {
+    .home{
+        .homeText{
+            transform: translateX(5rem);
+        }
+
+        .spanText{
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .homeTitle{
+            color: white;
+            padding: 2rem 0;
+            font-size: 41px;
+        }
+
+        .btn{
+            border: 2px solid white;
+            color: white;
+            font-size: 15px;
+            transition: .3s;
+        }
+    }
+}
+
+@media screen and (min-width:840px) {
+    .home{
+        .homeText{
+            transform: translateX(10rem);
+        }
+    }
+}
+
+@media screen and (min-width:1240px) {
+    .home{
+        .homeText{
+            transform: translateX(20rem);
+
+            .spanText{
+                font-size: 25px;
+            }
+
+            .homeTitle{
+                font-size: 20px;
+            }
+
+            .btn{
+                font-size: 22px;
+            }
+        }
+    }
+}

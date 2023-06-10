@@ -103,3 +103,86 @@
         }
     }
 }
+
+@media screen and (mmin-width:580px) {
+    .tours{
+        .secContainer{
+            .tourContainer{
+                .singleTour{
+                    grid-template-columns: repeat(2,1fr);
+                    padding-bottom: 0rem;
+                    
+                    .imgDiv{
+                        height: 100%;
+                        width: 100%;
+                    }
+                        
+                    .tourInfo{
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (mmin-width:1054px) {
+    .tours{
+        .secContainer{
+            .tourContainer{
+                .singleTour{
+                    .tourInfo{
+                        .tourTitle{
+                            font-size: 18px;
+                        }
+
+                        .stars_review{
+                            .custReview{
+                                font-size: 14px;
+                                transform: translateY(-2.5px);
+                            }
+                        }
+
+                        p{
+                            font-size: 14px;
+                            line-height: 1.5rem;
+                        }
+
+                        .btn{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (mmin-width:1496px) {
+    .tours{
+        .secContainer{
+            .tourContainer{
+                .singleTour{
+                    .tourInfo{
+                        .tourTitle{
+                            font-size: 20px;
+                        }
+
+                        p{
+                            font-size: 15px;
+                        }
+
+                        .btn{
+                            font-size: 15px;
+                            width: max-content;
+                        }
+                    }
+
+                    .price{
+                        font-size: 45px;
+                    }
+                }
+            }
+        }
+    }
+}

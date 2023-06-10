@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Tours.scss'
 import { AiFillStar } from 'react-icons/ai'
 import masaiMara from '../assets/Marasafaris.jpg'
 import lnakuru from '../assets/nakuru.jpg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Tours() {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
   return (
     <div className='tours container section'>
       <div className="secContainer">
@@ -12,11 +19,11 @@ export default function Tours() {
           Popular Excursions
         </span>
         <div className="tourContainer">
-          <div className="singleTour grid">
+          <div data-aos='fade-up' data-aos-duration='2000' className="singleTour grid">
             <div className="imgDiv">
               <img src={masaiMara} alt='' />
             </div>
-            <div className="tourInfo">
+            <div data-aos='fade-up' data-aos-duration='3000' className="tourInfo">
               <span className="tourTitle">
                 Maasai Mara National Park, Narok.
               </span>
@@ -52,11 +59,11 @@ export default function Tours() {
             </span>
           </div>
           </div>
-          <div className="singleTour grid">
+          <div data-aos='fade-up' data-aos-duration='3000' className="singleTour grid">
             <div className="imgDiv">
               <img src={lnakuru} alt='' />
             </div>
-            <div className="tourInfo">
+            <div data-aos='fade-up' data-aos-duration='3500' className="tourInfo">
               <span className="tourTitle">
                 Lake Nakuru, Nakuru.
               </span>

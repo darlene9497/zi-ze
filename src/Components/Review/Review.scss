@@ -51,3 +51,19 @@
         }
     }
 }
+
+@media screen and (min-width:524px) {
+    .review{
+        .reviewContainer{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+@media screen and (min-width:840px) {
+    .review{
+        .reviewContainer{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
